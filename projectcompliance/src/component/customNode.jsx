@@ -5,7 +5,11 @@ import { Handle, Position,applyNodeChanges } from 'react-flow-renderer';
 
 const handleStyle = { left: 10 };
 
+
+
 function CustomNode({ data }) {
+    
+
     let localNoOfActions = data.noOfActions;
     const handleKeyDown = (evt) => {
         if (evt.key === "Enter") {
@@ -18,7 +22,6 @@ function CustomNode({ data }) {
                     action:evt.target.value.toString()
                 })
                 localNoOfActions += 1;
-                console.log(localNoOfActions)
                 //Clearing input
                 evt.currentTarget.value = "";
 

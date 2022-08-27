@@ -9,54 +9,50 @@ const handleStyle = { left: 10 };
 
 function CustomNode({ data }) {
     
-    let serviceType = "Offered";
-    let localNoOfActions = data.noOfActions;
+    let serviceType = "offered";
     const handleKeyDown = (evt) => {
         if (evt.key === "Enter") {
           //console.log(type);
             //Check if empty string
-            if (evt.target.value.length != 0) {
-                console.log(evt.target.value)
-                //Add it into data
-                data.info.push({
-                    id:(localNoOfActions + 1),
-                    action:evt.target.value.toString()
-                })
-                localNoOfActions += 1;
+            if (evt.target.value.length !== 0) {
+              if (serviceType === "offered") {
+                data.serviceOffered.push(evt.target.value);
+              } else if (serviceType === "borrowed") {
+                data.serviceBorrowed.push(evt.target.value);
+              }
                 //Clearing input
-                evt.currentTarget.value = "";
-
-
-            } else {
-                console.log("the fuck");
+              evt.currentTarget.value = "";
             }
         }
 
   };
   const onChange = useCallback((evt) => {
-    console.log(evt.target.value);
+    //Update service type without pressing enter
+    serviceType = evt.target.value;
   });
 
-  const information = data.info;
+  
 
   return (
     <div className="text-updater-node">
       <Handle type="target" position={Position.Top} />
       <div>
+        <p>Entity</p>
         <label htmlFor="text"><h1>{data.label}</h1></label>
         <input id="text" name="text" onKeyDown={handleKeyDown} /> 
         <select name="type" onChange={onChange}>
           <option value="offered" >Offered </option>
           <option value="borrowed">Borrowed</option>
         </select>
-        <input type="submit" hidden />
-
         <div className="info">
             <h2>Service Borrowed</h2>
             <ul>
-                {information.length? information.map(info => (<li key={info.id}>{info.action}</li>)) : <span></span>} 
+              {data.serviceBorrowed.length? data.serviceBorrowed.map(service => (<li key={service}>{service}</li>)) : <span></span>} 
             </ul>
             <h2>Service Offered</h2> 
+            <ul>
+              {data.serviceOffered.length? data.serviceOffered.map(service => (<li key={service}>{service}</li>)) : <span></span>}
+            </ul>
         </div>
       </div>
       <Handle type="source" position={Position.Bottom} id="a" style={handleStyle} />
@@ -64,5 +60,4 @@ function CustomNode({ data }) {
     </div>
   );
 }
-
 export default CustomNode;

@@ -4,6 +4,7 @@ import ReactFlow, {
   applyEdgeChanges,
   applyNodeChanges,
 } from "react-flow-renderer";
+import {useNavigate} from "react-router-dom";
 
 import initialNodes from "../data/nodes";
 import initialEdges from "../data/edges";
@@ -14,6 +15,7 @@ import "./customNode.css";
 const nodeTypes = { customNode: CustomNode };
 
 function Flow() {
+  const navigate = useNavigate();
   const defaultEdgeOptions = { animated: true };
 
   //Input Elements
@@ -46,9 +48,10 @@ function Flow() {
   );
 
   const exportGraph = () => {
-    //This is where you put in the AXIOS / FLASK Code
+    console.log("The information below is passed:");
     console.log(nodes);
     console.log(edges);
+    navigate("/structuralresult", {propEdges:edges, propNodes:nodes});
   };
 
   return (

@@ -22,7 +22,7 @@ function Flow() {
     setNodes((e) =>
       e.concat({
         id: (e.length + 1).toString(),
-        data: { label: `${name}`, info: [] },
+        data: { label: `${name}`, serviceOffered: [], serviceBorrowed:[] },
         position: { x: 0, y: 0 },
         type: "customNode",
       })

@@ -11,14 +11,23 @@ import "./customNode.css";
 
 const nodeTypes = { customNode: CustomNode };
 
+
 function FlowDisplay(propNodes, propEdges) {
   const defaultEdgeOptions = { animated: true };
-  console.log(propNodes);
 
-//   const [propNodes, setNodes] = useState();
-//   const [propEdges, setEdges] = useState();
-//   console.log(propNodes);
-//   console.log(nodes);
+//   const getFromDb = () = {
+//     //Code that gets from data base, returns nodes _+ edges object to use in useState
+// }
+
+  const [nodes,setNodes] = useState(propNodes.propNodes);
+
+  const [edges, setEdges] = useState(propNodes.propEdges);
+
+  console.log("Nodes is this now");
+  console.log(nodes.propNodes);
+
+
+
 
 //   const onNodesChange = useCallback(
 //     (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
@@ -37,8 +46,8 @@ function FlowDisplay(propNodes, propEdges) {
   return (
     <Fragment>
       <ReactFlow
-        nodes={propNodes}
-        edges={propEdges}
+        nodes={nodes}
+        edges={edges}
         defaultEdgeOptions={defaultEdgeOptions}
         style={{ width: "100%", height: "90vh" }}
         nodeTypes={nodeTypes}

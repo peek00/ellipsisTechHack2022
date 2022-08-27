@@ -11,13 +11,8 @@ function App() {
   return (
     <Router>
       <Routes>
-      {/* <div className="App">
-        <Flow/>
-      </div> */}
-        <Route path="/structuralinput" element={StructuralInput()}/>
-        <Route path="/structuralresult" render={(props) => StructuralInput({...props})} element={StructuralResult()}/>
-        {/* <Route path="/structuralresult" element={StructuralResult()}/> */}
-        {/* <Route path="/test/new" render={(props) => <NewTestComp {...props}/>}/> */}
+        <Route path="/structuralinput" element={StructuralInput()}/> }
+        <Route path="/structuralresult" element={ <StructuralResult props/>}/>
       </Routes>
     </Router>
   );

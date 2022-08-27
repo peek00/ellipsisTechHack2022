@@ -16,7 +16,6 @@ function StructuralResult() {
             <h1></h1>
             <h2> Recommendations & Review</h2>
             <FlowDisplay propNodes={nodesData} propEdges={edgesData}/>
-
         </div>
     );
 }

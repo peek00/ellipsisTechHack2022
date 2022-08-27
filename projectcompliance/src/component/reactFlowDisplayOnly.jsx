@@ -23,12 +23,6 @@ function FlowDisplay(propNodes, propEdges) {
 
   const [edges, setEdges] = useState(propNodes.propEdges);
 
-  console.log("Nodes is this now");
-  console.log(nodes.propNodes);
-
-
-
-
 //   const onNodesChange = useCallback(
 //     (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
 //     [setNodes]

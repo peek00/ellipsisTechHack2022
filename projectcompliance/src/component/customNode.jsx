@@ -9,10 +9,11 @@ const handleStyle = { left: 10 };
 
 function CustomNode({ data }) {
     
-
+    let serviceType = "Offered";
     let localNoOfActions = data.noOfActions;
     const handleKeyDown = (evt) => {
         if (evt.key === "Enter") {
+          //console.log(type);
             //Check if empty string
             if (evt.target.value.length != 0) {
                 console.log(evt.target.value)
@@ -30,7 +31,11 @@ function CustomNode({ data }) {
                 console.log("the fuck");
             }
         }
+
   };
+  const onChange = useCallback((evt) => {
+    console.log(evt.target.value);
+  });
 
   const information = data.info;
 
@@ -38,12 +43,20 @@ function CustomNode({ data }) {
     <div className="text-updater-node">
       <Handle type="target" position={Position.Top} />
       <div>
-        <label htmlFor="text">{data.label}</label>
+        <label htmlFor="text"><h1>{data.label}</h1></label>
         <input id="text" name="text" onKeyDown={handleKeyDown} /> 
+        <select name="type" onChange={onChange}>
+          <option value="offered" >Offered </option>
+          <option value="borrowed">Borrowed</option>
+        </select>
+        <input type="submit" hidden />
+
         <div className="info">
+            <h2>Service Borrowed</h2>
             <ul>
                 {information.length? information.map(info => (<li key={info.id}>{info.action}</li>)) : <span></span>} 
             </ul>
+            <h2>Service Offered</h2> 
         </div>
       </div>
       <Handle type="source" position={Position.Bottom} id="a" style={handleStyle} />

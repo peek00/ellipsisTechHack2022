@@ -4,7 +4,7 @@ import ReactFlow, {
   applyEdgeChanges,
   applyNodeChanges,
 } from "react-flow-renderer";
-import {useNavigate, useParams, useSearchParams} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 import initialNodes from "../data/nodes";
 import initialEdges from "../data/edges";
@@ -16,9 +16,7 @@ const nodeTypes = { customNode: CustomNode };
 
 function Flow() {
   const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams();
 
-  console.log(searchParams.get("n"));
 
   const defaultEdgeOptions = { animated: true };
 

@@ -1,9 +1,11 @@
 import React from 'react';
 
+import ComplianceInput from '../component/complianceInput';
+
 function ComplianceInput() {
   return (
       <div className="App">
-        <complianceInput/>
+        <ComplianceInput/>
       </div> 
   );
 }

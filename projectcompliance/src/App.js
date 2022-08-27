@@ -14,8 +14,10 @@ function App() {
       {/* <div className="App">
         <Flow/>
       </div> */}
-        <Route exact path="/structuralresult" element={StructuralResult()}/>
-        <Route exact path="/structuralinput" element={StructuralInput()}/>
+        <Route path="/structuralinput" element={StructuralInput()}/>
+        <Route path="/structuralresult" render={(props) => StructuralInput({...props})} element={StructuralResult()}/>
+        {/* <Route path="/structuralresult" element={StructuralResult()}/> */}
+        {/* <Route path="/test/new" render={(props) => <NewTestComp {...props}/>}/> */}
       </Routes>
     </Router>
   );

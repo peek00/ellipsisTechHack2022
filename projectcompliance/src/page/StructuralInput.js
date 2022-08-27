@@ -1,8 +1,7 @@
 import React from 'react';
 import Flow from '../component/reactFlow';
-import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
 
-function StructuralInput(edges="",nodes="") {
+function StructuralInput() {
   return (
       <div className="App">
         <Flow/>

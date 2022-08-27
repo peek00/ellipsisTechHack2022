@@ -4,7 +4,7 @@ import ReactFlow, {
   applyEdgeChanges,
   applyNodeChanges,
 } from "react-flow-renderer";
-import {useNavigate} from "react-router-dom";
+import {useNavigate, useParams, useSearchParams} from "react-router-dom";
 
 import initialNodes from "../data/nodes";
 import initialEdges from "../data/edges";
@@ -16,6 +16,10 @@ const nodeTypes = { customNode: CustomNode };
 
 function Flow() {
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  console.log(searchParams.get("n"));
+
   const defaultEdgeOptions = { animated: true };
 
   //Input Elements
@@ -48,10 +52,13 @@ function Flow() {
   );
 
   const exportGraph = () => {
-    console.log("The information below is passed:");
-    console.log(nodes);
+    //XY: Write function that creates ID, uuid4
+    console.log(nodes); 
     console.log(edges);
-    navigate("/structuralresult", {propEdges:edges, propNodes:nodes});
+    //Write code that lets you export nodes / edges into your data base
+    //Stringify first
+    //Write code that generates ID to send to DB
+    navigate("/structuralresult", {state : {nodesData:nodes, edgesData:edges}});
   };
 
   return (

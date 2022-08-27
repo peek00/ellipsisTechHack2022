@@ -11,11 +11,8 @@ function App() {
   return (
     <Router>
       <Routes>
-      {/* <div className="App">
-        <Flow/>
-      </div> */}
-        <Route exact path="/structuralresult" element={StructuralResult()}/>
-        <Route exact path="/structuralinput" element={StructuralInput()}/>
+        <Route path="/structuralinput" element={StructuralInput()}/> }
+        <Route path="/structuralresult" element={ <StructuralResult props/>}/>
       </Routes>
     </Router>
   );

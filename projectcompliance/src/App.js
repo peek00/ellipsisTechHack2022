@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/structuralinput" element={StructuralInput()}/> }
+        <Route path="/structuralinput" element={StructuralInput()}/> 
         <Route path="/structuralresult" element={ <StructuralResult props/>}/>
         <Route path='/complianceinput' element={ComplianceInput()}/>
         <Route path='/complianceresult' element={<ComplianceResult props/>} />

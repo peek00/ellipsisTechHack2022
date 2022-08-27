@@ -37,13 +37,13 @@ function CustomNode({ data }) {
     <div className="text-updater-node">
       <Handle type="target" position={Position.Top} />
       <div>
+        <p>Entity</p>
         <label htmlFor="text"><h1>{data.label}</h1></label>
         <input id="text" name="text" onKeyDown={handleKeyDown} /> 
         <select name="type" onChange={onChange}>
           <option value="offered" >Offered </option>
           <option value="borrowed">Borrowed</option>
         </select>
-
         <div className="info">
             <h2>Service Borrowed</h2>
             <ul>
@@ -60,5 +60,4 @@ function CustomNode({ data }) {
     </div>
   );
 }
-
 export default CustomNode;

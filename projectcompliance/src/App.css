@@ -32,6 +32,12 @@ h1 {
     font-size: 10rem;
 }
 
+.medText{
+    color: white;
+    font-weight:800;
+    font-size: 6rem;
+}
+
 .banner, .NavBar{
     background-color: #533549;
     width: 100vw;

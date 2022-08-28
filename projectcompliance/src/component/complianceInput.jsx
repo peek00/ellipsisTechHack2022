@@ -17,8 +17,13 @@ function ComplianceInput() {
   return (
     <div>
       <NavBar/>
+      <div className='text-center'>
+        <p className="homeText mt-5 mb-0"> Welcome to the all new </p>
+        <p className="medText"> Compliance Checker</p>
+        <p className="homeText">Choose between Entity or Customer</p>
+      </div>
+     
       <Row className="justify-content-center">
-      <h1>Compliance Checker</h1>
       <Col className="justify-content-center" lg={3}>
       <select name="type" onChange={onChange}>
         <option value="customer">Customer </option>

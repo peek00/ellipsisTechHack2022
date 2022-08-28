@@ -40,7 +40,7 @@ function CustomerInput(type) {
           <input className="form-control" type="text" name="name" />
           <br></br>
           <div className="text-center">
-            <Button  type="submit">Submit</Button>
+            <Button variant="dark"  type="submit">Submit</Button>
           </div>
         
         </form>

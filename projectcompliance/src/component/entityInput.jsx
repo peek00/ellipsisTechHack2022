@@ -68,10 +68,10 @@ function EntityInput(type) {
             <option value="offered">Offered </option>
             <option value="borrowed">Borrowed</option>
           </select>
-          <Button size={"sm"} onClick={handleAddService}>Add Service</Button>
+          <Button variant="dark" size={"sm"} onClick={handleAddService}>Add Service</Button>
           <br></br>
           <br></br>
-          <Button type="submit">Submit</Button>
+          <Button variant="dark" type="submit">Submit</Button>
         </form>
 
         <div className="info">

@@ -13,8 +13,9 @@ function ComplianceResult() {
     return (
         <div>
             <NavBar/>
-
-            <h1>Compliance Result Page</h1>
+            <div className='text-center'>
+                <p className="medText"> Compliance Result Page</p>
+            </div>
             <ComplianceDashboard props={name}/>
         </div>
     );

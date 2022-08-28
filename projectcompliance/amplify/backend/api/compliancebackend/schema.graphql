@@ -1,0 +1,12 @@
+type ComplianceChecker @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  humanOrNot: Boolean
+  entity_interaction: AWSJSON
+}
+
+type StructureChecker @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  input: AWSJSON
+  output: AWSJSON
+}
+ 

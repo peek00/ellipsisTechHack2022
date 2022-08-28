@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-compliancebackend-staging-124959-authRole",
+      "UnauthRoleArn": "arn:aws:iam::094262473630:role/amplify-compliancebackend-staging-124959-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::094262473630:role/amplify-compliancebackend-staging-124959-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-compliancebackend-staging-124959-deployment",
+      "UnauthRoleName": "amplify-compliancebackend-staging-124959-unauthRole",
+      "StackName": "amplify-compliancebackend-staging-124959",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:094262473630:stack/amplify-compliancebackend-staging-124959/c3009d10-2606-11ed-a732-021ceb982872",
+      "AmplifyAppId": "d1xy17dggz67d7"
+    },
+    "categories": {
+      "auth": {
+        "compliancebackend": {}
+      }
+    }
+  }
+}

@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# PROJECT XADEX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**PROJECT XADEX** was created by Xun Yi, Allyne, Elijah, Xian Xiang, Declan as part of `Ellipsis Tech Series Hackathon 2022`. 
 
-## Available Scripts
+We were unable to deploy the file in time. The following are the steps to run the project. 
+```
+//Ensure node.js is installed
+cd projectcompliance
+npm i 
+npm start
+```
 
-In the project directory, you can run:
+___
 
-### `npm start`
+# Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**PROJECT XADEX** was built primarily with `ReactJS`. We worked on `AWS Amplify` as a database but were unable to fully integrate it before the submission. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Features
+There are two main features of our web application:
 
-### `npm test`
+1. Compliance Checker
+2. Structural Checker
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Compliance Checker
+The compliance checker is targetted towards customers or entities that a Fintech / Crypto client might be interested in onboarding or working with. 
 
-### `npm run build`
+The service idea we want to represent is an API-like service offered by Goldman Sach and powered by their financial expertise which will allow Fintech and Crypto clients to access them easily to perform a compliance check on a customer or entity.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In our application, we represented it as a input form where details are entered and then a dummy compliance report is presented to the user. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Structural Checker
+The structural checker is targetted towards Fintech / Crypto startups that are looking into ensuring that the way they have structured their company complys with regulation. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The service idea we want to represent is a flowchart builder where clients can chart out their business structure. As entities, services and responsibilities likely differ between various companies, we decide to allow the client to enter in these information freely. 
 
-### `npm run eject`
+Similarly to how Microsoft Compliance Manager works, we believe the backend processing logic can be built through a combination of AI and NLP. With a graphical representation of the business structure, we believe this will allow us to check and review if there are any regulatory breaches.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In our application, we represented it as a flowchart builder where a client can create entities and provide information to them. Upon submitting, a dummy report will be presented to the user.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+___
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Footnote
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A big part of our services are reliant on the backend processing logic of the financial institution. After doing some reading on how Microsoft Compliance Manager does this, we realised it was unlikely we could accomplish anything close or useful in the short time span of the hackathon. Therefore, we decided to "blackbox"
+the backend processing away and focus on other elements.
 
-## Learn More
+___
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Thank You.

@@ -15,7 +15,15 @@ h1 {
     color: #F6B042;
     font-weight:800;
     font-size: 3rem;
-    display: inline;
+
+}
+
+.h1Clone{
+    color: #F6B042;
+    font-weight:800;
+    font-size: 3rem;
+    margin-left: -85px;
+    margin-top: 5px;
 }
 
 .bigText{

@@ -7,12 +7,14 @@ import StructuralResult from './page/StructuralResult';
 import StructuralInput from './page/StructuralInput';
 import ComplianceInput from './component/complianceInput';
 import ComplianceResult from './page/ComplianceResult';
+import Home from './page/Home';
 
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={Home()} />
         <Route path="/structuralinput" element={StructuralInput()}/> 
         <Route path="/structuralresult" element={ <StructuralResult props/>}/>
         <Route path='/complianceinput' element={ComplianceInput()}/>

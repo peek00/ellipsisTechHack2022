@@ -1,11 +1,6 @@
-import { Fragment, useCallback, useState } from "react";
+import { Fragment,  useState } from "react";
 import ReactFlow, {
-  addEdge,
-  applyEdgeChanges,
-  applyNodeChanges,
 } from "react-flow-renderer";
-import {useNavigate} from "react-router-dom";
-
 import CustomNode from "./customNode";
 import "./customNode.css";
 

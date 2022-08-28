@@ -1,3 +1,7 @@
+.Container{
+    margin-left: 50px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 
@@ -12,14 +16,22 @@ h1 {
 .banner, .NavBar{
     background-color: #010e3a;
     width: 100vw;
-    height: 13vh ;
+    height: 9vh ;
 }
+
+.NavBar .NavText{
+    color: #f2f2f2;
+    font-weight:800;
+    font-size:1.5rem;
+}
+
 
 .Canvas{
     background-color: #f2f2f2;
     background-size: 40px 40px;
     background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
-  
+
+    
 }
 
 

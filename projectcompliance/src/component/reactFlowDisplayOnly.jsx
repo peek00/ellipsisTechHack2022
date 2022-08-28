@@ -4,6 +4,8 @@ import ReactFlow, {
 import CustomNode from "./customNode";
 import "./customNode.css";
 
+
+
 const nodeTypes = { customNode: CustomNode };
 
 

@@ -9,9 +9,14 @@ import { useNavigate } from "react-router-dom";
 import initialNodes from "../data/nodes";
 import initialEdges from "../data/edges";
 
+
 import CustomNode from "./customNode";
 import "./customNode.css";
-import { Container, Row, Col } from "react-bootstrap";
+//Bootstrap stuff
+import { Row, Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+
 
 const nodeTypes = { customNode: CustomNode };
 
@@ -65,26 +70,32 @@ function Flow() {
     <Fragment>
       <Row>
         <Col lg={3}>
-        <div>
-          Create Node
-          <input
-            type="text"
-            onChange={(e) => setName(e.target.value)}
-            name="title"
-          />
-          <button type="button" onClick={addNode}>
-            Add
-          </button>
-        </div>
-        <div>
-          Compliance Check
-          <button type="button" onClick={exportGraph}>
-            Submit
-          </button>
-        </div>
-      </Col>
+          <Card className="mt-1 border border-secondary">
+            <Card.Body>
+              <Card.Title>ToolBar</Card.Title>
+              <Card.Text>
+                Entity Name <br></br>
+                <input
+                  type="text"
+                  onChange={(e) => setName(e.target.value)}
+                  name="title"
+                />
+                <Button className="ms-3" type="button" onClick={addNode}>
+                  Add
+                </Button>
+              </Card.Text>
+              <Card.Text>
+                Compliance Check <br></br>
+                <Button  type="button" onClick={exportGraph}>
+                  Submit
+                </Button>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
         <Col lg={9}>
-          <ReactFlow className='Canvas'
+          <ReactFlow
+            className="Canvas mt-1 border border-secondary rounded"
             nodes={nodes}
             edges={edges}
             onNodesChange={onNodesChange}

@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom";
-
+import Button from "react-bootstrap/Button";
 
 function NavBar() {
     const navigate = useNavigate();
@@ -19,9 +19,11 @@ function NavBar() {
 
     return (
         <div className="NavBar">
-            <button onClick={linkToHome}>Home</button>
-            <button onClick={linkToComplianceChecker}>Compliance Checker</button>
-            <button onClick={linkToStructuralChecker}>Structural Checker</button>
+            <div className="justify-items-center" > 
+                <Button  variant="dark" className="NavText " onClick={linkToHome}>HOME</Button>
+                <Button variant="dark" className="NavText ms-5 " onClick={linkToComplianceChecker}>COMPLIANCE CHECKER</Button>
+                <Button variant="dark" className="NavText ms-5" onClick={linkToStructuralChecker}>STRUCTURAL CHECKER</Button>
+            </div>
         </div>
     )
 };

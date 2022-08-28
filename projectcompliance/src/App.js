@@ -17,7 +17,7 @@ import Home from './page/Home';
 
 function App() {
   return (
-    <Container fluid >
+    <Container fluid>
       <Router>
         <Routes>
           <Route path="/" element={Home()} />

@@ -6,7 +6,6 @@ import NavBar from "./navBar";
 
 //Bootstrap
 import { Row, Col } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
 
 function ComplianceInput() {
   const [type, setType] = useState("customer");

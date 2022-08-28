@@ -18,7 +18,7 @@ function NavBar() {
 
 
     return (
-        <div>
+        <div className="NavBar">
             <button onClick={linkToHome}>Home</button>
             <button onClick={linkToComplianceChecker}>Compliance Checker</button>
             <button onClick={linkToStructuralChecker}>Structural Checker</button>

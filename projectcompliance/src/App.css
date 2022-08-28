@@ -1,0 +1,25 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: #9bb0dd;
+}
+
+h1 {
+    color: #c8cfdb;
+    font-weight:800;
+}
+
+.banner, .NavBar{
+    background-color: #010e3a;
+    width: 100vw;
+    height: 13vh ;
+}
+
+.Canvas{
+    background-color: #f2f2f2;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+  
+}
+
+

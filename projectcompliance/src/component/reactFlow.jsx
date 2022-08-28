@@ -68,7 +68,7 @@ function Flow() {
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
         defaultEdgeOptions={defaultEdgeOptions}
-        style={{ width: "100%", height: "90vh" }}
+        style={{ width: "100%", height: "80vh" }}
         fitView
         nodeTypes={nodeTypes}
       />

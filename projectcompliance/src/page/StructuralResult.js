@@ -2,8 +2,7 @@ import React from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 
 import FlowDisplay from '../component/reactFlowDisplayOnly';
-import nodes from "../data/nodes";
-
+import NavBar from '../component/navBar';
 
 function StructuralResult() {  
     const location = useLocation();
@@ -12,6 +11,7 @@ function StructuralResult() {
     
     return (
         <div>
+            <NavBar/> 
             <h1>Result Page</h1>
             <h1></h1>
             <h2> Recommendations & Review</h2>

@@ -11,10 +11,7 @@ function StructuralResult() {
     
     return (
         <div>
-            <NavBar/> 
-            <h1>Result Page</h1>
-            <h1></h1>
-            <h2> Recommendations & Review</h2>
+            <NavBar/>     
             <FlowDisplay propNodes={nodesData} propEdges={edgesData}/>
         </div>
     );

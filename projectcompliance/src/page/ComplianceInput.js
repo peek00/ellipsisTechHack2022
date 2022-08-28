@@ -1,12 +1,10 @@
 import React from 'react';
 
 import ComplianceInput from '../component/complianceInput';
-import NavBar from '../component/navBar';
-
+import Footer from '../component/footer';
 function ComplianceInput() {
   return (
       <div className="App">
-        <NavBar/>
         <ComplianceInput/>
       </div> 
   );

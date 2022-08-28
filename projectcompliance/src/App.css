@@ -1,0 +1,106 @@
+.Container{
+    margin-left: 50px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(220,121,170);
+    background: linear-gradient(137deg, rgba(220,121,170,1) 0%, rgba(75,23,82,1) 100%); 
+    background-attachment: fixed; /*edit*/
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    /* background-color: #9bb0dd; */
+}
+
+h1 {
+    color: #F6B042;
+    font-weight:800;
+    font-size: 3rem;
+    width: 100%;
+
+}
+
+.h1Clone{
+    color: #F6B042;
+    font-weight:800;
+    font-size: 3rem;
+    margin-left: -85px;
+    margin-top: 5px;
+}
+
+.homeTitle{
+    margin-left: 150px;
+    margin-top: 13px;
+}
+
+.bigText{
+    color: white;
+    font-weight:800;
+    font-size: 10rem;
+}
+
+.medText{
+    color: white;
+    font-weight:800;
+    font-size: 6rem;
+}
+
+.nodeTitle{
+    color:#000000;
+    font-weight:800;
+    font-size: 2rem;
+}
+
+.banner, .NavBar{
+    background-color: #533549;
+    width: 110vw;
+    height: 9vh ;
+}
+
+.NavBar .NavText{
+    color: #f2f2f2;
+    font-weight:800;
+    font-size:1.5rem;
+    padding-left: 0px;
+}
+.formFields{
+    color:#010e3a;
+}
+
+.formTitle{
+    color: #c8cfdb;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.Canvas{
+    background-color: #f2f2f2;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+
+}
+
+.footer{
+    position: fixed;
+    background-color: #533549;
+    margin-top: 97vh;
+    width: 100vw;
+    height: 8vh;
+    font-weight:500;
+    color: #eeeeee ;
+    text-align: end;
+    font-size: 0.8rem;
+}
+
+.homeText{
+    font-size: 1.5rem;
+    margin-top: -15px;
+    font-weight: 300;
+    color: #eeeeee;
+    
+}
+
+
+
+

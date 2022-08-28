@@ -1,7 +1,7 @@
 import React from "react";
 import {  useLocation } from "react-router-dom";
 import NavBar from '../component/navBar';
-
+import ComplianceDashboard from "../component/ComplianceDashboard";
 
 
 function ComplianceResult() {  
@@ -13,8 +13,10 @@ function ComplianceResult() {
     return (
         <div>
             <NavBar/>
-            <h1>Compliance Result Page</h1>
-            <h2>{name}</h2>
+            <div className='text-center'>
+                <p className="medText"> Compliance Result Page</p>
+            </div>
+            <ComplianceDashboard props={name}/>
         </div>
     );
 }

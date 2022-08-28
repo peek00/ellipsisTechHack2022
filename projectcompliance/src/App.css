@@ -4,8 +4,10 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-
-    background-color: #9bb0dd;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    height: 100vh;
+    /* background-color: #9bb0dd; */
 }
 
 h1 {
@@ -24,14 +26,21 @@ h1 {
     font-weight:800;
     font-size:1.5rem;
 }
+.formFields{
+    color:#010e3a;
+}
 
+.formTitle{
+    color: #c8cfdb;
+    font-weight: 800;
+    font-size: 2rem;
+}
 
 .Canvas{
     background-color: #f2f2f2;
     background-size: 40px 40px;
     background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
 
-    
 }
 
 

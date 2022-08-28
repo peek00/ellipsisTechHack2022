@@ -7,7 +7,6 @@ import "./customNode.css";
 //Bootstrap
 import { Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import {FcApproval, FcHighPriority, FcInfo} from "react-icons/fc";
 import Alert from 'react-bootstrap/Alert';
 

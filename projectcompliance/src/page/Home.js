@@ -3,7 +3,7 @@ import HomeButtons from "../component/homeButtons";
 
 
 import {Container, Row, Col} from 'react-bootstrap';
-
+import splashImage from "../images/splash.jpg";
 
 function Home() {
     return(

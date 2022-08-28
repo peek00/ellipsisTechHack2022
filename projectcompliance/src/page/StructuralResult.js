@@ -11,8 +11,7 @@ function StructuralResult() {
     
     return (
         <div>
-            <NavBar/> 
-            <h1>Structure Review</h1>
+            <NavBar/>     
             <FlowDisplay propNodes={nodesData} propEdges={edgesData}/>
         </div>
     );

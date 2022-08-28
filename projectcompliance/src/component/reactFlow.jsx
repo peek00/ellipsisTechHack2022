@@ -72,7 +72,14 @@ function Flow() {
         <Col lg={3}>
           <Card className="mt-1 border border-secondary">
             <Card.Body>
-              <Card.Title>ToolBar</Card.Title>
+              <Card.Title>Welcome to</Card.Title>
+              <h2>Structural Checker!</h2>
+            </Card.Body>
+          </Card>
+
+          <Card className="mt-1 border border-secondary">
+            <Card.Body>
+              <Card.Title className="formTitle">Tools</Card.Title>
               <Card.Text>
                 Entity Name <br></br>
                 <input
@@ -80,13 +87,17 @@ function Flow() {
                   onChange={(e) => setName(e.target.value)}
                   name="title"
                 />
-                <Button className="ms-3" type="button" onClick={addNode}>
+                <Button variant="dark" className="ms-3" type="button" onClick={addNode}>
                   Add
                 </Button>
+                <Card.Text>Create an entity by typing in the name and pressing add.</Card.Text>
+                <Card.Text>After wards, fill in the service borrowed and offered by this company.</Card.Text>
+                <Card.Text>Remember to connect them as part of your process!</Card.Text>
+                <Card.Text>Once you are done, hit Submit below to check for compliance!</Card.Text>
+
               </Card.Text>
               <Card.Text>
-                Compliance Check <br></br>
-                <Button  type="button" onClick={exportGraph}>
+                <Button variant="dark"  type="button" onClick={exportGraph}>
                   Submit
                 </Button>
               </Card.Text>

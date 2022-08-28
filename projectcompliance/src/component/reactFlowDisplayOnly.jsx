@@ -39,6 +39,12 @@ function FlowDisplay(propNodes, propEdges) {
             />
           </Col>
           <Col lg={6}>
+          <Card className="mt-1 border border-secondary">
+            <Card.Body>
+              <Card.Title>Welcome to your</Card.Title>
+              <h2>Structural Review Page!</h2>
+            </Card.Body>
+          </Card>
             <Card className="mt-1 border border-secondary">
               <Card.Body>
                 <Card.Title><FcApproval size={45}/> Things look fine!</Card.Title>

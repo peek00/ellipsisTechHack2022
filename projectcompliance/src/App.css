@@ -6,8 +6,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: rgb(220,121,170);
     background: linear-gradient(137deg, rgba(220,121,170,1) 0%, rgba(75,23,82,1) 100%); 
-    height: 98vh;
+    background-attachment: fixed; /*edit*/
+    height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
     /* background-color: #9bb0dd; */
 }
 
@@ -15,6 +17,7 @@ h1 {
     color: #F6B042;
     font-weight:800;
     font-size: 3rem;
+    width: 100%;
 
 }
 
@@ -24,6 +27,11 @@ h1 {
     font-size: 3rem;
     margin-left: -85px;
     margin-top: 5px;
+}
+
+.homeTitle{
+    margin-left: 150px;
+    margin-top: 13px;
 }
 
 .bigText{
@@ -38,9 +46,15 @@ h1 {
     font-size: 6rem;
 }
 
+.nodeTitle{
+    color:#000000;
+    font-weight:800;
+    font-size: 2rem;
+}
+
 .banner, .NavBar{
     background-color: #533549;
-    width: 100vw;
+    width: 110vw;
     height: 9vh ;
 }
 
@@ -70,11 +84,13 @@ h1 {
 .footer{
     position: fixed;
     background-color: #533549;
-    margin-top: 70vh;
+    margin-top: 97vh;
     width: 100vw;
     height: 8vh;
-    font-weight:100;
-    color: #F6B042 ;
+    font-weight:500;
+    color: #eeeeee ;
+    text-align: end;
+    font-size: 0.8rem;
 }
 
 .homeText{
@@ -84,6 +100,7 @@ h1 {
     color: #eeeeee;
     
 }
+
 
 
 

@@ -38,7 +38,7 @@ function CustomNode({ data }) {
       <Handle type="target" position={Position.Top} />
       <div>
         <p>Entity</p>
-        <label htmlFor="text"><h1>{data.label}</h1></label>
+        <label htmlFor="text"><p className='nodeTitle'>{data.label}</p></label>
         <input id="text" name="text" onKeyDown={handleKeyDown} /> 
         <select name="type" onChange={onChange}>
           <option value="offered" >Offered </option>

@@ -6,6 +6,7 @@ import ReactFlow, {
 } from "react-flow-renderer";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { Amplify, API, graphqlOperation } from "aws-amplify";
+import { v4 as uuidv4 } from "uuid";
 
 import initialNodes from "../data/nodes";
 import initialEdges from "../data/edges";
@@ -68,6 +69,8 @@ function Flow() {
             console.log(nodes);
             console.log(edges);
             const information = { nodes: nodes, edges: edges };
+            const newuuid = uuidv4();
+            console.log(newuuid);
             console.log(information);
             console.log(typeof information);
             //Write code that lets you export nodes / edges into your data base
@@ -77,14 +80,14 @@ function Flow() {
                 query: createStructureChecker,
                 variables: {
                     input: {
-                        id: "1", //by right should be generated from user id, but we have no login model
+                        id: newuuid, //by right should be generated from user id, but we have no login model
                         input: JSON.stringify(information),
                         output: JSON.stringify(information),
                     },
                 },
             });
             navigate("/structuralresult", {
-                state: { nodesData: nodes, edgesData: edges },
+                state: { uuid: newuuid, nodesData: nodes, edgesData: edges },
             });
         } catch (err) {
             console.log("error creating graph:", err);

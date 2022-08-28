@@ -18,8 +18,8 @@ function HomeButtons() {
     return(
         <Row className="text-center mt-4 mb-4" >
             <div>
-                <Button className="ms-5" onClick={linkToComplianceChecker}>Compliance Checker</Button>
-                <Button className="ms-5" onClick={linkToStructuralChecker}>Structural Checker</Button>
+                <Button variant="light" className="ms-1" onClick={linkToComplianceChecker}>Compliance Checker</Button>
+                <Button variant="light" className="ms-1" onClick={linkToStructuralChecker}>Structural Checker</Button>
             </div>
         </Row>
        

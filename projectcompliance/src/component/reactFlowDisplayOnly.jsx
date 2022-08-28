@@ -25,20 +25,6 @@ function FlowDisplay(propNodes, propEdges) {
 
   const [edges, setEdges] = useState(propNodes.propEdges);
 
-//   const onNodesChange = useCallback(
-//     (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
-//     [setNodes]
-//   );
-//   const onEdgesChange = useCallback(
-//     (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
-//     [setEdges]
-//   );
-//   const onConnect = useCallback(
-//     (connection) => setEdges((eds) => addEdge(connection, eds)),
-//     [setEdges]
-//   );
-
-
   return (
     <Fragment>
         <Row>

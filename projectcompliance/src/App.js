@@ -13,11 +13,12 @@ import StructuralInput from './page/StructuralInput';
 import ComplianceInput from './component/complianceInput';
 import ComplianceResult from './page/ComplianceResult';
 import Home from './page/Home';
+import Footer from './component/footer';
 
 
 function App() {
   return (
-    <Container fluid>
+    <Container fluid className="px-0">
       <Router>
         <Routes>
           <Route path="/" element={Home()} />
@@ -27,6 +28,7 @@ function App() {
           <Route path='/complianceresult' element={<ComplianceResult props/>} />
         </Routes>
       </Router>
+      <Footer/>
     </Container>
   );
 }

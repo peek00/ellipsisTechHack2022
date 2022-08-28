@@ -4,19 +4,28 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
-    height: 100vh;
+    background: rgb(220,121,170);
+    background: linear-gradient(137deg, rgba(220,121,170,1) 0%, rgba(75,23,82,1) 100%); 
+    height: 98vh;
+    width: 100vw;
     /* background-color: #9bb0dd; */
 }
 
 h1 {
-    color: #c8cfdb;
+    color: #F6B042;
     font-weight:800;
+    font-size: 3rem;
+    display: inline;
+}
+
+.bigText{
+    color: white;
+    font-weight:800;
+    font-size: 10rem;
 }
 
 .banner, .NavBar{
-    background-color: #010e3a;
+    background-color: #533549;
     width: 100vw;
     height: 9vh ;
 }
@@ -25,6 +34,7 @@ h1 {
     color: #f2f2f2;
     font-weight:800;
     font-size:1.5rem;
+    padding-left: 0px;
 }
 .formFields{
     color:#010e3a;
@@ -42,5 +52,24 @@ h1 {
     background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
 
 }
+
+.footer{
+    position: fixed;
+    background-color: #533549;
+    margin-top: 70vh;
+    width: 100vw;
+    height: 8vh;
+    font-weight:100;
+    color: #F6B042 ;
+}
+
+.homeText{
+    font-size: 1.5rem;
+    margin-top: -15px;
+    font-weight: 300;
+    color: #eeeeee;
+    
+}
+
 
 
